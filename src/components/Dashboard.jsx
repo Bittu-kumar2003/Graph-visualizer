@@ -45,7 +45,7 @@ const Dashboard = () => {
       {/* Navbar */}
       <nav className="navbar">
         <h2>Air Quality Dashboard</h2>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Bittu-kumar2003" target="_blank" rel="noopener noreferrer">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s" alt="GitHub Logo" className="github-logo" />
         </a>
       </nav>
