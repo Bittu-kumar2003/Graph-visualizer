@@ -1,0 +1,117 @@
+/* Container styling for the dashboard */
+.dashboard-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h2 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+    
+  }
+  
+  .github-logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .github-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Header styling */
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  /* Graph container */
+  .graphs-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures graphs are displayed horizontally */
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Graph box styling */
+  .graph-box {
+    position: relative;
+    width: 300px; /* Set a fixed width for consistency */
+    height: 300px; /* Square shape */
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .graph-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .graph-box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .graphs-container {
+      flex-direction: column; /* Stack graphs vertically on small screens */
+      align-items: center;
+    }
+  
+    .graph-box {
+      width: 100%;
+      height: 300px; /* Maintain square aspect ratio */
+    }
+  }
+  
